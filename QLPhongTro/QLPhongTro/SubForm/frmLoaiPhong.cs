@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLPhongTro
+namespace QLPhongTro.SubForm
 {
-    public partial class Form1 : Form
+    public partial class frmLoaiPhong : Form
     {
-        public Form1()
+        public frmLoaiPhong()
         {
             InitializeComponent();
         }

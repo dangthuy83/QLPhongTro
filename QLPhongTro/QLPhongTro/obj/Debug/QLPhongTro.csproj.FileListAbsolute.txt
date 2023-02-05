@@ -1,0 +1,11 @@
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.exe.config
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.exe
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.pdb
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.AssemblyReference.cache
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.SuggestedBindingRedirects.cache
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.frmMain.resources
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.Properties.Resources.resources
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.GenerateResource.cache
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.CoreCompileInputs.cache
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.exe
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.pdb
