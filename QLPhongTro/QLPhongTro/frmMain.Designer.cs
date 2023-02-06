@@ -53,9 +53,9 @@
             // 
             this.grbContentMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbContentMainForm.Location = new System.Drawing.Point(0, 38);
-            this.grbContentMainForm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grbContentMainForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 5);
             this.grbContentMainForm.Name = "grbContentMainForm";
-            this.grbContentMainForm.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grbContentMainForm.Padding = new System.Windows.Forms.Padding(4, 0, 4, 5);
             this.grbContentMainForm.Size = new System.Drawing.Size(875, 495);
             this.grbContentMainForm.TabIndex = 0;
             this.grbContentMainForm.TabStop = false;
@@ -89,13 +89,13 @@
             // ketNoiDBToolStripMenuItem
             // 
             this.ketNoiDBToolStripMenuItem.Name = "ketNoiDBToolStripMenuItem";
-            this.ketNoiDBToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.ketNoiDBToolStripMenuItem.Size = new System.Drawing.Size(194, 32);
             this.ketNoiDBToolStripMenuItem.Text = "Kết Nối DB";
             // 
             // thoatToolStripMenuItem
             // 
             this.thoatToolStripMenuItem.Name = "thoatToolStripMenuItem";
-            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(194, 32);
             this.thoatToolStripMenuItem.Text = "Thoát";
             this.thoatToolStripMenuItem.Click += new System.EventHandler(this.thoatToolStripMenuItem_Click);
             // 
@@ -113,19 +113,20 @@
             // loaiPhongToolStripMenuItem
             // 
             this.loaiPhongToolStripMenuItem.Name = "loaiPhongToolStripMenuItem";
-            this.loaiPhongToolStripMenuItem.Size = new System.Drawing.Size(196, 32);
+            this.loaiPhongToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.loaiPhongToolStripMenuItem.Text = "Loại Phòng";
+            this.loaiPhongToolStripMenuItem.Click += new System.EventHandler(this.loaiPhongToolStripMenuItem_Click);
             // 
             // phongToolStripMenuItem
             // 
             this.phongToolStripMenuItem.Name = "phongToolStripMenuItem";
-            this.phongToolStripMenuItem.Size = new System.Drawing.Size(196, 32);
+            this.phongToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.phongToolStripMenuItem.Text = "Phòng";
             // 
             // dichVuToolStripMenuItem
             // 
             this.dichVuToolStripMenuItem.Name = "dichVuToolStripMenuItem";
-            this.dichVuToolStripMenuItem.Size = new System.Drawing.Size(196, 32);
+            this.dichVuToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.dichVuToolStripMenuItem.Text = "Dịch Vụ";
             // 
             // tácVụToolStripMenuItem
@@ -141,13 +142,13 @@
             // thuePhongToolStripMenuItem
             // 
             this.thuePhongToolStripMenuItem.Name = "thuePhongToolStripMenuItem";
-            this.thuePhongToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.thuePhongToolStripMenuItem.Size = new System.Drawing.Size(202, 32);
             this.thuePhongToolStripMenuItem.Text = "Thuê Phòng";
             // 
             // traPhongToolStripMenuItem
             // 
             this.traPhongToolStripMenuItem.Name = "traPhongToolStripMenuItem";
-            this.traPhongToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.traPhongToolStripMenuItem.Size = new System.Drawing.Size(202, 32);
             this.traPhongToolStripMenuItem.Text = "Trả Phòng";
             // 
             // thốngKêToolStripMenuItem

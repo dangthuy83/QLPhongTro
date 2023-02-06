@@ -39,10 +39,13 @@ namespace QLPhongTro
                 cmd= new SqlCommand(sql, conn); //nộ dung câu lệnh sql được truyền vào
                 cmd.CommandType = CommandType.StoredProcedure; //set command type là procedure
                 dt = new DataTable();
-                foreach(var para in lstPara)
+                if(lstPara != null)
                 {
-                    cmd.Parameters.AddWithValue(para.key, para.value); //gắn các tham số cho cmd
-                }
+                    foreach (var para in lstPara)
+                    {
+                        cmd.Parameters.AddWithValue(para.key, para.value); //gắn các tham số cho cmd
+                    }
+                }                
                 dt.Load(cmd.ExecuteReader());
                 return dt;
             }

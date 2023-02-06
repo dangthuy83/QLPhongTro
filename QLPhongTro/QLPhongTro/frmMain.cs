@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLPhongTro.SubForm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,12 +32,18 @@ namespace QLPhongTro
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void thoatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void loaiPhongToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmLoaiPhong();
+            AddForm(f);
         }
     }
 }
