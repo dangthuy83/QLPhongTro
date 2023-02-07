@@ -35,8 +35,10 @@
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnXacNhan = new System.Windows.Forms.Button();
             this.dgvDanhMucLoaiPhog = new System.Windows.Forms.DataGridView();
+            this.lblTrangThai = new System.Windows.Forms.Label();
+            this.btnXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucLoaiPhog)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +57,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(120, 45);
+            this.label2.Location = new System.Drawing.Point(89, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 26);
             this.label2.TabIndex = 1;
@@ -66,7 +68,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(408, 45);
+            this.label3.Location = new System.Drawing.Point(406, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 26);
             this.label3.TabIndex = 2;
@@ -76,16 +78,16 @@
             // 
             this.txtLoaiPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoaiPhong.Location = new System.Drawing.Point(242, 43);
+            this.txtLoaiPhong.Location = new System.Drawing.Point(211, 43);
             this.txtLoaiPhong.Name = "txtLoaiPhong";
-            this.txtLoaiPhong.Size = new System.Drawing.Size(160, 36);
+            this.txtLoaiPhong.Size = new System.Drawing.Size(195, 36);
             this.txtLoaiPhong.TabIndex = 3;
             // 
             // txtDonGia
             // 
             this.txtDonGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDonGia.Location = new System.Drawing.Point(484, 43);
+            this.txtDonGia.Location = new System.Drawing.Point(474, 43);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(113, 36);
             this.txtDonGia.TabIndex = 4;
@@ -97,7 +99,7 @@
             // 
             this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(604, 43);
+            this.btnThem.Location = new System.Drawing.Point(594, 43);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 26);
             this.btnThem.TabIndex = 5;
@@ -109,7 +111,7 @@
             // 
             this.btnCapNhat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhat.Location = new System.Drawing.Point(679, 43);
+            this.btnCapNhat.Location = new System.Drawing.Point(669, 43);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(89, 26);
             this.btnCapNhat.TabIndex = 6;
@@ -117,17 +119,17 @@
             this.btnCapNhat.UseVisualStyleBackColor = true;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
-            // btnXoa
+            // btnXacNhan
             // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(768, 43);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 26);
-            this.btnXoa.TabIndex = 7;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btnXacNhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXacNhan.Location = new System.Drawing.Point(758, 43);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(89, 26);
+            this.btnXacNhan.TabIndex = 7;
+            this.btnXacNhan.Text = "Xác Nhận";
+            this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // dgvDanhMucLoaiPhog
             // 
@@ -138,13 +140,38 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDanhMucLoaiPhog.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvDanhMucLoaiPhog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhMucLoaiPhog.Location = new System.Drawing.Point(15, 90);
+            this.dgvDanhMucLoaiPhog.Location = new System.Drawing.Point(15, 109);
+            this.dgvDanhMucLoaiPhog.MultiSelect = false;
             this.dgvDanhMucLoaiPhog.Name = "dgvDanhMucLoaiPhog";
             this.dgvDanhMucLoaiPhog.ReadOnly = true;
             this.dgvDanhMucLoaiPhog.RowHeadersWidth = 51;
             this.dgvDanhMucLoaiPhog.RowTemplate.Height = 24;
-            this.dgvDanhMucLoaiPhog.Size = new System.Drawing.Size(832, 347);
+            this.dgvDanhMucLoaiPhog.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDanhMucLoaiPhog.Size = new System.Drawing.Size(832, 328);
             this.dgvDanhMucLoaiPhog.TabIndex = 8;
+            this.dgvDanhMucLoaiPhog.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhMucLoaiPhog_CellClick);
+            // 
+            // lblTrangThai
+            // 
+            this.lblTrangThai.AutoSize = true;
+            this.lblTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangThai.Location = new System.Drawing.Point(218, 82);
+            this.lblTrangThai.Name = "lblTrangThai";
+            this.lblTrangThai.Size = new System.Drawing.Size(365, 29);
+            this.lblTrangThai.TabIndex = 9;
+            this.lblTrangThai.Text = "Quản Lý Danh Mục Loại Phòng";
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(753, 17);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(94, 26);
+            this.btnXoa.TabIndex = 10;
+            this.btnXoa.Text = "Xóa Phòng";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // frmLoaiPhong
             // 
@@ -152,6 +179,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 448);
             this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.lblTrangThai);
+            this.Controls.Add(this.btnXacNhan);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgvDanhMucLoaiPhog);
@@ -179,7 +208,9 @@
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnCapNhat;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.DataGridView dgvDanhMucLoaiPhog;
+        private System.Windows.Forms.Label lblTrangThai;
+        private System.Windows.Forms.Button btnXoa;
     }
 }
