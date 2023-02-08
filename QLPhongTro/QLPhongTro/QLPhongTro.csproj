@@ -61,6 +61,18 @@
     <Compile Include="SubForm\frmLoaiPhong.Designer.cs">
       <DependentUpon>frmLoaiPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubForm\frmPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\frmPhong.Designer.cs">
+      <DependentUpon>frmPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\frmXuLyPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\frmXuLyPhong.Designer.cs">
+      <DependentUpon>frmXuLyPhong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +87,12 @@
     </Compile>
     <EmbeddedResource Include="SubForm\frmLoaiPhong.resx">
       <DependentUpon>frmLoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\frmPhong.resx">
+      <DependentUpon>frmPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\frmXuLyPhong.resx">
+      <DependentUpon>frmXuLyPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -10,3 +10,5 @@ G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhon
 G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.exe
 G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.pdb
 G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.SubForm.frmLoaiPhong.resources
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.SubForm.frmPhong.resources
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.SubForm.frmXuLyPhong.resources

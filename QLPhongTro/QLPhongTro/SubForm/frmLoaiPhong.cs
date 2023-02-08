@@ -36,6 +36,8 @@ namespace QLPhongTro.SubForm
             txtDonGia.ReadOnly = true;
             txtLoaiPhong.ReadOnly = true;
 
+            dgvDanhMucLoaiPhog.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
             dgvDanhMucLoaiPhog.Columns[0].Width= 100;
             dgvDanhMucLoaiPhog.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvDanhMucLoaiPhog.Columns[0].HeaderText = "ID Phòng";

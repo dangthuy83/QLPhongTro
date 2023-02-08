@@ -122,6 +122,7 @@
             this.phongToolStripMenuItem.Name = "phongToolStripMenuItem";
             this.phongToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.phongToolStripMenuItem.Text = "Phòng";
+            this.phongToolStripMenuItem.Click += new System.EventHandler(this.phongToolStripMenuItem_Click);
             // 
             // dichVuToolStripMenuItem
             // 
