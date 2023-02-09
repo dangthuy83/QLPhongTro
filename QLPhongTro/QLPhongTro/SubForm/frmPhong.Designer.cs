@@ -56,6 +56,8 @@
             this.dgvDanhMucPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDanhMucPhong.Size = new System.Drawing.Size(851, 420);
             this.dgvDanhMucPhong.TabIndex = 0;
+            this.dgvDanhMucPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhMucPhong_CellClick);
+            this.dgvDanhMucPhong.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhMucPhong_CellDoubleClick);
             // 
             // label1
             // 
@@ -121,6 +123,7 @@
             this.btnXoaPhong.TabIndex = 3;
             this.btnXoaPhong.Text = "Xóa Phòng";
             this.btnXoaPhong.UseVisualStyleBackColor = true;
+            this.btnXoaPhong.Click += new System.EventHandler(this.btnXoaPhong_Click);
             // 
             // frmPhong
             // 

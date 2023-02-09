@@ -14,24 +14,46 @@ namespace QLPhongTro.SubForm
 {
     public partial class frmXuLyPhong : Form
     {
-        private bool themmoi;
+        private string idphong;
         private Database db;
-        public frmXuLyPhong(bool themMoi)
+        public frmXuLyPhong(string idPhong)
         {    
-            this.themmoi = themMoi;
+            this.idphong = idPhong;
             InitializeComponent();
         }  
         private void frmXuLyPhong_Load(object sender, EventArgs e)
         {
             db = new Database();
             loadLoaiPhong();
-            if (themmoi)
+            if (string.IsNullOrEmpty(idphong))  //nếu idphong là null thì thì sẽ thêm mới phòng
             {
-                lblTitle.Text = "Thêm Phòng Mới";
+                lblTitle.Text = "Thêm Phòng Mới!";
             }
             else
             {
-                lblTitle.Text = "Cập Nhật Thông Tin Phòng";
+                lblTitle.Text = "Cập Nhật Thông Tin Phòng!";
+                //vì phòng được xác định qua id nên chúng ta cần truyền tham số là giá trị id của phòng
+                var lstPra = new List<CustomParameter>()
+                {
+                    new CustomParameter()
+                    {
+                        key = "@idphong",
+                        value = idphong
+                    }
+                };
+                //sử dụng hàm SelectData trong class Database để lấy dữ liệu phòng
+                var dtbPhong = db.SelectData("sqlSelectPhong", lstPra).Rows[0]; //kết quả trả về 1 datatable có 1 hàng là id đã chọn
+                //set các dữ liệu lấy được cho các component trên frmXylyphong
+                cbbLoaiPhong.SelectedValue = dtbPhong["IDLoaiPhong"].ToString();
+                txtTenPhong.Text = dtbPhong["TenPhong"].ToString();
+                if (dtbPhong["TrangThai"].ToString() == "1")
+                {
+                    ckbTrangThai.Checked = true;
+                }
+                else
+                {
+                    ckbTrangThai.Checked = false;
+                }
             }
         }
         private void loadLoaiPhong()
@@ -54,7 +76,7 @@ namespace QLPhongTro.SubForm
         {
             if(cbbLoaiPhong.SelectedIndex < 0)
             {
-                MessageBox.Show("Vui lòng chọn loại phòng","Chú ý",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng chọn loại phòng!","Chú ý",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
 
@@ -65,11 +87,11 @@ namespace QLPhongTro.SubForm
 
             if (string.IsNullOrEmpty(tenPhong))
             {
-                MessageBox.Show("Vui lòng nhập tên phòng", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập tên phòng!", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtTenPhong.Select();
                 return;
             }
-            if(themmoi) //trường hợp thêm mới phòng
+            if (string.IsNullOrEmpty(idphong)) //trường hợp thêm mới phòng có idphong <=> null
             {
                 var lstPra = new List<CustomParameter>()
                 {
@@ -92,12 +114,44 @@ namespace QLPhongTro.SubForm
                 var rs = db.ExeCute("themMoiPhong",lstPra);
                 if(rs == 1)
                 {
-                    MessageBox.Show("Thêm mới phòng thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Thêm mới phòng thành công!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            else //trường hợp cập nhật phòng
+            else //trường hợp cập nhật phòng đã tồn tại <=> id phòng có giá trị #null
             {
-
+                var lstPra = new List<CustomParameter>()
+                {
+                    new CustomParameter()
+                    {
+                        key = "@idPhong",
+                        value= idphong
+                    },
+                    new CustomParameter()
+                    {
+                        key = "@tenPhong",
+                        value= txtTenPhong.Text
+                    },
+                    new CustomParameter()
+                    {
+                        key = "@idLoaiPhong",
+                        value= cbbLoaiPhong.SelectedValue.ToString()
+                    },
+                    new CustomParameter()
+                    {
+                        key = "@trangThai",
+                        value= trangthai.ToString()
+                    }
+                };
+                var kq = db.ExeCute("sqlUpdatePhong", lstPra);
+                if(kq == 1)
+                {
+                    MessageBox.Show("Cập nhật thông tin phòng thành công!","",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Dispose(); //đóng form frmXylyphong
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thông tin phòng không thành công!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
