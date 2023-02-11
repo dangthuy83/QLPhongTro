@@ -48,6 +48,7 @@ namespace QLPhongTro.SubForm
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
             new frmXuLyPhong(null).ShowDialog(); //truyền tham số null để xác định trường hợp thêm mới phòng      
+            loadDSPhong();
         }
 
         private void loadDSPhong()

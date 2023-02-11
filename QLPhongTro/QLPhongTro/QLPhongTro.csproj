@@ -55,6 +55,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubForm\frmDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\frmDichVu.Designer.cs">
+      <DependentUpon>frmDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubForm\frmLoaiPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,18 @@
     </Compile>
     <Compile Include="SubForm\frmPhong.Designer.cs">
       <DependentUpon>frmPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\frmThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\frmThue.Designer.cs">
+      <DependentUpon>frmThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\frmThuePhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\frmThuePhong.Designer.cs">
+      <DependentUpon>frmThuePhong.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForm\frmXuLyPhong.cs">
       <SubType>Form</SubType>
@@ -85,11 +109,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SubForm\frmDichVu.resx">
+      <DependentUpon>frmDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubForm\frmLoaiPhong.resx">
       <DependentUpon>frmLoaiPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm\frmPhong.resx">
       <DependentUpon>frmPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\frmThue.resx">
+      <DependentUpon>frmThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\frmThuePhong.resx">
+      <DependentUpon>frmThuePhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm\frmXuLyPhong.resx">
       <DependentUpon>frmXuLyPhong.cs</DependentUpon>

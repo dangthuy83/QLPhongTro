@@ -82,8 +82,8 @@ namespace QLPhongTro.SubForm
 
             var idLoaiPhong = cbbLoaiPhong.SelectedValue.ToString();
             var tenPhong = txtTenPhong.Text.Trim();
-            var trangthai = ckbTrangThai.Checked?1:0; //vì checkbox chỉ có true hoặc false,
-                                                      //nên phải dùng toán tử 3 ngôi convert sang dạng bit 1,0 của dạng dữ liệu tinyint (SQL)
+            var trangthai = ckbTrangThai.Checked ? 1 : 0; //vì checkbox chỉ có true hoặc false,
+                                                          //nên phải dùng toán tử 3 ngôi convert sang dạng bit 1,0 của dạng dữ liệu tinyint (SQL)
 
             if (string.IsNullOrEmpty(tenPhong))
             {
@@ -115,6 +115,8 @@ namespace QLPhongTro.SubForm
                 if(rs == 1)
                 {
                     MessageBox.Show("Thêm mới phòng thành công!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtTenPhong.Text = null;
+                    cbbLoaiPhong.SelectedIndex = 0;
                 }
             }
             else //trường hợp cập nhật phòng đã tồn tại <=> id phòng có giá trị #null

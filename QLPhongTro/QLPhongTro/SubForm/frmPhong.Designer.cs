@@ -35,6 +35,7 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnThemMoi = new System.Windows.Forms.Button();
             this.btnXoaPhong = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucPhong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,14 +48,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDanhMucPhong.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvDanhMucPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhMucPhong.Location = new System.Drawing.Point(12, 101);
+            this.dgvDanhMucPhong.Location = new System.Drawing.Point(12, 124);
             this.dgvDanhMucPhong.MultiSelect = false;
             this.dgvDanhMucPhong.Name = "dgvDanhMucPhong";
             this.dgvDanhMucPhong.ReadOnly = true;
             this.dgvDanhMucPhong.RowHeadersWidth = 51;
             this.dgvDanhMucPhong.RowTemplate.Height = 24;
             this.dgvDanhMucPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhMucPhong.Size = new System.Drawing.Size(851, 420);
+            this.dgvDanhMucPhong.Size = new System.Drawing.Size(851, 405);
             this.dgvDanhMucPhong.TabIndex = 0;
             this.dgvDanhMucPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhMucPhong_CellClick);
             this.dgvDanhMucPhong.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhMucPhong_CellDoubleClick);
@@ -84,10 +85,10 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(225, 65);
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(225, 64);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(229, 32);
+            this.txtTimKiem.Size = new System.Drawing.Size(229, 34);
             this.txtTimKiem.TabIndex = 2;
             // 
             // btnTimKiem
@@ -125,6 +126,17 @@
             this.btnXoaPhong.UseVisualStyleBackColor = true;
             this.btnXoaPhong.Click += new System.EventHandler(this.btnXoaPhong_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(373, 18);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "* Chú Ý: Nhấp đúp chuột vào phòng muốn sửa thông tin";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -134,6 +146,7 @@
             this.Controls.Add(this.btnThemMoi);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDanhMucPhong);
@@ -157,5 +170,6 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnThemMoi;
         private System.Windows.Forms.Button btnXoaPhong;
+        private System.Windows.Forms.Label label3;
     }
 }

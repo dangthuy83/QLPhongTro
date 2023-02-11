@@ -51,5 +51,25 @@ namespace QLPhongTro
             var f = new frmPhong();
             AddForm(f);
         }
+
+        private void dichVuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmDichVu();
+            AddForm(f);
+        }
+
+        private void thuePhongToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmThuePhong();
+            AddForm(f);
+            this.WindowState= FormWindowState.Maximized;
+        }
+
+        private void KhachHangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmKhachHang();
+            AddForm(f);
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }
