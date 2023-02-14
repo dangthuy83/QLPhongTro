@@ -118,9 +118,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(19, 190);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 18);
+            this.label4.Size = new System.Drawing.Size(88, 18);
             this.label4.TabIndex = 4;
-            this.label4.Text = "ngày Thuê";
+            this.label4.Text = "Ngày Thuê";
             // 
             // cbbPhong
             // 

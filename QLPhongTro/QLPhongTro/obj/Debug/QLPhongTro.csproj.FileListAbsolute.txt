@@ -16,3 +16,4 @@ G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhon
 G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.SubForm.frmThue.resources
 G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.SubForm.frmThuePhong.resources
 G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.SubForm.frmKhachHang.resources
+G:\Elearning\GITHUB\dangthuy83\QLPhongTro\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.SubForm.frmThanhToan.resources

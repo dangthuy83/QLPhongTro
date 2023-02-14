@@ -41,7 +41,10 @@
             this.HKTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DaThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TienDatCoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ConLai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThanhToan = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuePhong)).BeginInit();
@@ -119,7 +122,10 @@
             this.HKTT,
             this.NgayThue,
             this.NgayTra,
+            this.GiaPhong,
+            this.DaThanhToan,
             this.TienDatCoc,
+            this.ConLai,
             this.btnThanhToan,
             this.ID});
             this.dgvThuePhong.Location = new System.Drawing.Point(12, 100);
@@ -131,6 +137,7 @@
             this.dgvThuePhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvThuePhong.Size = new System.Drawing.Size(851, 420);
             this.dgvThuePhong.TabIndex = 4;
+            this.dgvThuePhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThuePhong_CellClick);
             // 
             // TenPhong
             // 
@@ -195,6 +202,24 @@
             this.NgayTra.ReadOnly = true;
             this.NgayTra.Width = 125;
             // 
+            // GiaPhong
+            // 
+            this.GiaPhong.DataPropertyName = "GiaPhong";
+            this.GiaPhong.HeaderText = "Giá Phòng";
+            this.GiaPhong.MinimumWidth = 6;
+            this.GiaPhong.Name = "GiaPhong";
+            this.GiaPhong.ReadOnly = true;
+            this.GiaPhong.Width = 125;
+            // 
+            // DaThanhToan
+            // 
+            this.DaThanhToan.DataPropertyName = "DaThanhToan";
+            this.DaThanhToan.HeaderText = "Đã Thanh Toán";
+            this.DaThanhToan.MinimumWidth = 6;
+            this.DaThanhToan.Name = "DaThanhToan";
+            this.DaThanhToan.ReadOnly = true;
+            this.DaThanhToan.Width = 125;
+            // 
             // TienDatCoc
             // 
             this.TienDatCoc.DataPropertyName = "TienDatCoc";
@@ -203,6 +228,15 @@
             this.TienDatCoc.Name = "TienDatCoc";
             this.TienDatCoc.ReadOnly = true;
             this.TienDatCoc.Width = 125;
+            // 
+            // ConLai
+            // 
+            this.ConLai.DataPropertyName = "ConLai";
+            this.ConLai.HeaderText = "Còn Lại";
+            this.ConLai.MinimumWidth = 6;
+            this.ConLai.Name = "ConLai";
+            this.ConLai.ReadOnly = true;
+            this.ConLai.Width = 125;
             // 
             // btnThanhToan
             // 
@@ -259,7 +293,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HKTT;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayThue;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DaThanhToan;
         private System.Windows.Forms.DataGridViewTextBoxColumn TienDatCoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ConLai;
         private System.Windows.Forms.DataGridViewButtonColumn btnThanhToan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
     }

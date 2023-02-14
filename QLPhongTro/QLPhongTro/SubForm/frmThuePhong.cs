@@ -22,7 +22,7 @@ namespace QLPhongTro.SubForm
         private void frmThuePhong_Load(object sender, EventArgs e)
         {
             db = new Database();
-            loadDSThuePhong();            
+            loadDSThuePhong();
         }
         private void loadDSThuePhong()
         {
@@ -46,6 +46,18 @@ namespace QLPhongTro.SubForm
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             loadDSThuePhong();
+        }
+
+        private void dgvThuePhong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                if(e.ColumnIndex == dgvThuePhong.Columns["btnThanhToan"].Index)
+                {
+                    var idThuePhong = dgvThuePhong.Rows[e.RowIndex].Cells["ID"].Value.ToString();
+                    new frmThanhToan(idThuePhong).ShowDialog();
+                }
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ namespace QLPhongTro.SubForm
 {
     public partial class frmThue : Form
     {
-        private Database db;
+        private Database db,dt;
         public frmThue()
         {
             InitializeComponent();
@@ -29,7 +29,11 @@ namespace QLPhongTro.SubForm
             cbbPhong.DisplayMember = "TenPhong";
             cbbPhong.SelectedIndex = -1;
 
-            //loadDSKH();
+            //load ds KH
+            dt = new Database();
+            var dts = dt.SelectData("loadDSKhachHangGhepHoTen");
+
+            cbbKhachHang.DataSource= dts;
             cbbKhachHang.ValueMember= "ID";
             cbbKhachHang.DisplayMember= "HoTen";
             cbbKhachHang.SelectedIndex = -1;
@@ -50,7 +54,6 @@ namespace QLPhongTro.SubForm
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            int datcoc = 0;
             var idPhong = cbbPhong.SelectedValue.ToString();
             var idKH = cbbKhachHang.SelectedValue.ToString();
             DateTime ngayThue, ngayTra;
@@ -82,10 +85,12 @@ namespace QLPhongTro.SubForm
                 return;
             }
 
+            int datcoc;
             try
             {
                 datcoc = int.Parse(txtTienCoc.Text);
-            }catch(Exception)
+            }
+            catch (Exception)
             {
                 MessageBox.Show("Vui lòng nhập tiền đặt cọc!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -123,18 +128,18 @@ namespace QLPhongTro.SubForm
             {
                 MessageBox.Show("Thuê phòng thành công!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 var updateTrangThai = new List<CustomParameter>()
-            {
-                new CustomParameter()
                 {
-                    key = "@idphong",
-                    value = idPhong
-                },
-                new CustomParameter()
-                {
-                    key = "@trangThai",
-                    value = "1"
-                }
-            };
+                    new CustomParameter()
+                    {
+                        key = "@idphong",
+                        value = idPhong
+                    },
+                    new CustomParameter()
+                    {
+                        key = "@trangThai",
+                        value = "1"
+                    }
+                };
                 db.ExeCute("sqlUpdateTrangThaiPhong", updateTrangThai);
                 this.Dispose();
             }
